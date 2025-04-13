@@ -53,7 +53,6 @@
 10. Producer-Consumer Problem (Using Semaphores)
 10_producer_consumer.c
 
-11 & 12.
-UNIX Commands: Practice basic shell commands in terminal
+11. UNIX Commands: Practice basic shell commands in terminal
 
-Shell Programming: Separate .sh files (not included here)
+12. Shell Programming: Separate .sh files 
