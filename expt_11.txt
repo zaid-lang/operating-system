@@ -1,0 +1,48 @@
+File System Navigation : 
+Command	Description	Example
+cd	Changes the current working directory.	cd Documents
+ls	Lists files and directories in the current directory.	ls
+pwd	Prints the current working directory.	pwd
+mkdir	Creates a new directory.	mkdir new_folder
+rmdir	Removes an empty directory.	rmdir empty_folder
+mv	Moves files or directories.	mv file1.txt Documents/
+
+File Manipulation
+Command	Description	Example
+touch	Creates an empty file or updates the access and modification times.	touch new_file.txt
+cp	Copies files or directories.	cp file1.txt file2.txt
+mv	Moves files or directories.	mv file1.txt Documents
+rm	Remove files or directories.	rm old_file.txt
+cat	Concatenates files and displays their contents.	cat file1.txt file2.txt
+head	Displays the first few lines of a file.	head file.txt
+tail	Displays the last few lines of a file.	tail file.txt
+
+Process Management
+Command	Description	Example
+ps	Displays information about active processes, including their status and IDs.	ps aux
+top	Displays a dynamic real-time view of system processes and their resource usage.	top
+kill	Terminates processes using their process IDs (PIDs).	kill <pid>
+pkill	Sends signals to processes based on name or other attributes.	pkill -9 firefox
+killall	Terminates processes by name.	killall -9 firefox
+renice	Changes the priority of running processes.	renice -n 10 <pid>
+nice	Runs a command with modified scheduling priority.	nice -n 10 command
+pstree	Displays running processes as a tree.	pstree
+pgrep	Searches for processes by name or other attributes.	pgrep firefox
+jobs	Lists active jobs and their status in the current shell session.	jobs
+
+
+Text Processing
+Command	Description	Example
+grep	Searches for patterns in text files.	grep "error" logfile.txt
+
+Network Communication
+Command	Description	Example
+ping	Tests connectivity with another host using ICMP echo requests.	ping google.com
+host	Performs DNS lookups, displaying domain name to IP address resolution.	host google.com
+hostname	Displays or sets the system’s hostname.	hostname
+
+System Administration
+Command	Description	Example
+df	Displays disk space usage.	df -h
+du	Displays disk usage of files and directories.	du -sh /path/to/directory
+

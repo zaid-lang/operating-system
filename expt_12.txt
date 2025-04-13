@@ -1,0 +1,108 @@
+Script1:
+
+#!/bin/bash
+echo This is a simple string.
+
+echo "This is a string containing 'single quotes' so it's wrapped in double quotes."
+
+echo "This prints the user name:" $USER
+
+echo -e "The -e option lets us use\nformatting directives\nto split the string."
+OUTPUT:
+ 
+
+Script2:
+#!/bin/bash
+millennium_text="Years since the millennium:"
+
+current_time=$( date '+%H:%M:%S' )
+
+todays_date=$( date '+%F' )
+
+year=$( date '+%Y' )
+
+echo "Current time:" $current_time
+
+echo "Today's date:" $todays_date
+
+years_since_Y2K=$(( year - 2000 ))
+
+echo $millennium_text $years_since_Y2K
+OUTPUT:
+ 
+
+
+Script3:
+Handling User Input
+
+#!/bin/bash
+echo "Enter a number and hit \"Enter\""
+
+read user_number1;
+
+echo "Enter another number and hit \"Enter\""
+
+read user_number2;
+
+printf "You entered: %d and %d\n" $user_number1 $user_number2
+
+printf "Added together they make: %d\n" $(( user_number1 + user_number2))
+OUTPUT:
+ 
+
+Simple Programs:
+EVEN or ODD:
+#!/bin/bash
+
+# Prompt the user to enter a number
+echo "Enter a number:"
+read number
+
+# Check if the number is even or odd
+if [ $((number % 2)) -eq 0 ]; then
+    echo "$number is even."
+else
+    echo "$number is odd."
+Fi
+
+LARGEST OF THREE NUMBERS:
+#!/bin/bash
+
+# Read three numbers from the user
+echo "Enter first number: "
+read num1
+echo "Enter second number: "
+read num2
+echo "Enter third number: "
+read num3
+
+# Compare the numbers and find the largest
+if [ $num1 -ge $num2 ] && [ $num1 -ge $num3 ]; then
+    largest=$num1
+elif [ $num2 -ge $num1 ] && [ $num2 -ge $num3 ]; then
+    largest=$num2
+else
+    largest=$num3
+fi
+
+# Output the largest number
+echo "The largest number is: $largest"
+
+SUM OF N NUMBERS:
+#!/bin/bash
+
+# Prompt the user to enter a number
+echo "Enter a number:"
+read n
+
+# Initialize sum to 0
+sum=0
+
+# Loop from 1 to n and add each number to sum
+for (( i=1; i<=n; i++ ))
+do
+    sum=$((sum + i))
+done
+# Print the result
+echo "The sum of the first $n natural numbers is: $sum"
+
